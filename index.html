@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <header>
+      <h1>CatPhotoApp</h1>
+      <nav>
+        <ul>
+          <li><a href="#cat-photos">Fotos</a></li>
+          <li><a href="#cat-lists">Listas</a></li>
+          <li><a href="#cat-form">Formulário</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#reviews">Avaliações</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="cat-photos">
+        <h2>Cat Photos</h2>
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+        </a>
+      </section>
+
+      <section id="cat-lists">
+        <h2>Cat Lists</h2>
+        <ul>
+          <li>Catnip</li>
+          <li>Laser pointers</li>
+          <li>Lasagna</li>
+        </ul>
+      </section>
+
+      <section id="cat-form">
+        <h2>Register Your Cat</h2>
+        <form action="#">
+          <label for="catname">Cat Name:</label>
+          <input type="text" id="catname" name="catname" required>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="photo">Upload Cat Photo:</label>
+          <input type="file" id="photo" name="photo" accept="image/*">
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <section id="gallery">
+        <h2>User Submitted Gallery</h2>
+        <div>
+          <img src="/fotosgatinhos/gato1.jpg" alt="Kitten 1" width="300" height="200">
+          <img src="/fotosgatinhos/gato2.jpg" alt="Kitten 2" width="300" height="200">
+          <img src="/fotosgatinhos/gato3.jpg" alt="Kitten 3" width="200" height="200">
+        </div>
+      </section>
+
+      <section id="reviews">
+        <h2>Rate Your Cat!</h2>
+        <form>
+          <label for="catname2">Cat Name:</label>
+          <input type="text" id="catname2" name="catname2">
+
+          <label for="rating">Rate (1-5):</label>
+          <input type="number" id="rating" name="rating" min="1" max="5">
+
+          <label for="opinion">Why is your cat awesome?</label>
+          <textarea id="opinion" name="opinion"></textarea>
+
+          <button type="submit">Submit Review</button>
+        </form>
+      </section>
+
+      <section id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form>
+          <label for="newsletter-email">Email:</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <section id="testimonials">
+        <h2>What Cat Owners Say</h2>
+        <article>
+          <img src="/fotosgatinhos/gato5.jpg" alt="Cat named Miau" width="200" height="200">
+          <p><strong>Miau:</strong> "My human finally appreciates my greatness!"</p>
+        </article>
+        <article>
+          <img src="/fotosgatinhos/gato6.jpg" alt="Cat named Nino" width="300" height="200">
+          <p><strong>Nino:</strong> "Five stars! I love this app more than tuna."</p>
+        </article>
+      </section>
+
+      <section id="search">
+        <h2>Search for Cat Breeds</h2>
+        <input type="search" placeholder="Type a breed...">
+        <button type="button">Search</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>No Copyright -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
